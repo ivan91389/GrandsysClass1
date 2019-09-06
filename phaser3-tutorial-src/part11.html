@@ -45,7 +45,7 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-    this.load.image('sky', 'assets/sky.pig');
+    this.load.image('sky', 'assets/sky.png');
     this.load.image('ground', 'assets/platform.png');
     this.load.image('star', 'assets/star.png');
     this.load.image('bomb', 'assets/bomb.png');
@@ -139,7 +139,7 @@ function update ()
 
     if (cursors.left.isDown)
     {
-        //player.setVelocityX(-160);
+        player.setVelocityX(-160);
 
         player.anims.play('left', true);
     }
